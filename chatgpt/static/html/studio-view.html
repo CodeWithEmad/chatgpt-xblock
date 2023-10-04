@@ -1,0 +1,24 @@
+{% load chatgpt_tags %}
+<div class="editor-with-buttons">
+    <div class="wrapper-comp-settings is-active editor-with-buttons" id="settings-tab">
+        <ul class="list-input settings-list">
+              <li class="field comp-setting-entry metadata_entry">
+                  <div class='wrapper-comp-setting'>
+                      <label class="label setting-label" for="edit-display-name">{% trans 'AI XBlock Display Name'%}</label>
+                      <input type="text" class="field-data-control" id="edit-display-name" value="{{display_name_value}}">
+                  </div>
+                    <span class="tip setting-help"> {% trans 'Display Name Helper'%} </span>
+              </li>
+          </ul>
+    </div>
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+                <a href="#" class="button action-primary save-button">{% trans 'save' %}</a>
+            </li>
+            <li class="action-item">
+                <a href="#" class="button cancel-button">{% trans 'cancel' %}</a>
+            </li>
+        </ul>
+    </div>
+</div>

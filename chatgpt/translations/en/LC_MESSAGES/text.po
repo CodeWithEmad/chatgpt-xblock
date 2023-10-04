@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-04 09:21+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: chatgpt/static/html/student-view.html:12
+msgid "Ask a question ..."
+msgstr "Ask a question ..."
+
+#: chatgpt/static/html/student-view.html:13
+msgid "send"
+msgstr "Send"
+
+#: chatgpt/static/html/student-view.html:18
+msgid "You need to set the OPENAI_SECRET_KEY in your settings.py file"
+msgstr "You need to set the OPENAI_SECRET_KEY in your settings.py file"
+
+#: chatgpt/static/html/student-view.html:20
+msgid "Your key is not valid."
+msgstr "Your key is not valid."
+
+#: chatgpt/static/html/studio-view.html:7
+msgid "AI XBlock Display Name"
+msgstr "AI XBlock Display Name"
+
+#: chatgpt/static/html/studio-view.html:10
+msgid "Display Name Helper"
+msgstr "Student will see this name in learning"
+
+#: chatgpt/static/html/studio-view.html:17
+msgid "save"
+msgstr "Save"
+
+#: chatgpt/static/html/studio-view.html:20
+msgid "cancel"
+msgstr "Cancel"

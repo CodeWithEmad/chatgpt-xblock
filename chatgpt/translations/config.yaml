@@ -1,0 +1,32 @@
+# Configuration for i18n workflow.
+locales:
+    - en  # English - Source Language
+    - fa_IR  # Persian (Farsi)
+
+# The locales used for fake-accented English, for testing.
+dummy_locales:
+    - eo
+    - fake2
+    - rtl  # Fake testing language for Arabic
+
+# Directories we don't search for strings.
+ignore_dirs:
+    # Directories with no user-facing code.
+    - '*/migrations'
+    - '*/envs'
+    # Directories that are not our code.
+    - node_modules
+    # Directories containing files that can't have strings in them.
+    - docs
+    - '*/fonts'
+    - '*/img'
+    - '*/images'
+    - '*/sass'
+    - '*/css'
+    # Directories that only contain tests.
+    - '*/tests'
+    # Directories full of auto-generated JS
+    - edspiritai/static/js/i18n
+    # Directories with 3rd party apps.
+    - src/*
+    - '*/translations'

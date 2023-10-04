@@ -1,0 +1,22 @@
+{% load chatgpt_tags %}
+
+
+<div class="chatgpt_wrapper">
+    <div class="chatgpt_block {% if not is_key_set or not is_key_valid %}blurred{% endif %}">
+        <div class="chatbox">
+            <div id="chat-logs">
+                <!-- Chat logs will go here -->
+            </div>
+            <div class="chat-input">
+                <span id="error-msg"></span>
+                <textarea id="chat-msg" placeholder="{% trans 'Ask a question ...' %}" {% if not is_key_set or not is_key_valid %}disabled{% endif %}></textarea>
+                <button id="send-btn" {% if not is_key_set or not is_key_valid %}disabled{% endif %}>{% trans 'send' %}</button>
+            </div>
+        </div>
+    </div>
+    {% if not is_key_set %}
+        <div id="key-reminder" class="error_msg">{% trans 'You need to set the OPENAI_SECRET_KEY in your settings.py file' %}</div>
+    {% elif is_key_set and not is_key_valid %}
+        <div id="key-reminder" class="error_msg">{% trans 'Your key is not valid.' %}</div>
+    {% endif %}
+</div>
