@@ -22,7 +22,7 @@ def package_data(pkg, roots):
     """
     Generic function to find package_data.
 
-    All of the files under each of the `roots` will be declared as package
+    All of the files under each of the `roots` will be declared as a package
     data for package `pkg`.
     """
     data = []
@@ -46,7 +46,7 @@ setup(
         "chatgpt",
     ],
     install_requires=[
-        "XBlock==1.6.2",
+        "XBlock",
         "openai==0.28.1",
     ],
     entry_points={
